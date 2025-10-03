@@ -1,284 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <html lang="fr">
-    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width,initial-scale=1" />
-      <meta name="author" content="Selim" />
-      <title>Le Web expliqué simplement</title>
-      <meta
-        name="description"
-        content="Un site pédagogique expliquant les grandes lignes du Web : timeline, URL, noms de domaine, standards et sécurité."
-      />
-      <meta
-        name="keywords"
-        content="Web, Histoire du Web, Internet, Technologies, Tim Berners-Lee"
-      />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="stylesheet" href="css/style.css" />
-    </head>
-    <body>
-      <header class="site-header">
-        <div class="container header-inner">
-          <h1 class="brand">Le Web expliqué</h1>
-          <button
-            class="nav-toggle"
-            aria-expanded="false"
-            aria-label="Ouvrir le menu"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understanding the Web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Header -->
+    <header>
+      <div class="logo">WebProject</div>
+
+      <!-- Hamburger -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Menu -->
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#section1">Timeline</a></li>
+          <li><a href="#section2">URL</a></li>
+          <li><a href="#section3">Domains</a></li>
+          <li><a href="#section4">Standards</a></li>
+          <li><a href="#section5">Security</a></li>
+        </ul>
+      </nav>
+
+      <!-- Overlay -->
+      <div class="overlay" id="overlay"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>Understanding the Web</h1>
+        <p>
+          A modern, interactive journey through the foundations of the internet.
+        </p>
+        <a href="#section1" class="scroll-down">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           >
-            ☰
-          </button>
-          <nav class="main-nav" id="main-nav">
-            <a href="#hero">Accueil</a>
-            <a href="#timeline">Timeline</a>
-            <a href="#url">URL</a>
-            <a href="#domain">Noms de domaine</a>
-            <a href="#standards">Standards</a>
-            <a href="#security">Sécurité</a>
-            <a href="#contact">Contact</a>
-          </nav>
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Placeholder sections -->
+    <section id="section1" class="section">Timeline Section</section>
+    <section id="section2" class="section">URL Section</section>
+    <section id="section3" class="section">Dom</section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 WebProject. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#section1">Timeline</a>
+          <a href="#section2">URL</a>
+          <a href="#section3">Domains</a>
+          <a href="#section4">Standards</a>
+          <a href="#section5">Security</a>
         </div>
-      </header>
-      <main>
-        <section id="hero" class="hero">
-          <div class="container hero-grid">
-            <div>
-              <h2>Comprendre le Web en 5 étapes</h2>
-              <p>
-                Une présentation claire, interactive et responsive des notions
-                essentielles du Web — idéale pour un projet étudiant.
-              </p>
-              <p class="cta-row">
-                <a class="btn" href="#timeline">Découvrir la timeline</a>
-              </p>
-            </div>
-            <div class="hero-card">
-              <ul>
-                <li><strong>HTML</strong> — structure</li>
-                <li><strong>CSS</strong> — mise en forme</li>
-                <li><strong>JS</strong> — interactivité</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section id="timeline" class="section">
-          <div class="container">
-            <h3>Timeline du Web</h3>
-            <p class="lead">
-              Les grandes étapes, technologies et événements marquants.
-            </p>
-            <div class="timeline">
-              <!-- timeline items (example) -->
-              <article class="tl-item" data-year="1989">
-                <h4>1989 — Invention du Web</h4>
-                <p>
-                  Tim Berners-Lee propose le World Wide Web. Impact :
-                  facilitation du partage d'informations.
-                </p>
-              </article>
-              <article class="tl-item" data-year="1993">
-                <h4>1993 — Navigateurs graphiques</h4>
-                <p>
-                  Mosaic popularise la navigation graphique. Impact :
-                  démocratisation de l'accès au Web.
-                </p>
-              </article>
-              <article class="tl-item" data-year="2004">
-                <h4>2004 — Web 2.0</h4>
-                <p>
-                  Montée des plateformes collaboratives et du contenu généré par
-                  les utilisateurs.
-                </p>
-              </article>
-              <article class="tl-item" data-year="2007">
-                <h4>2007 — Mobile first</h4>
-                <p>
-                  L'iPhone change la manière d'utiliser le Web : priorité au
-                  mobile.
-                </p>
-              </article>
-              <article class="tl-item" data-year="2015">
-                <h4>2015 — HTTPS partout</h4>
-                <p>
-                  Let’s Encrypt et la sécurité par défaut accélèrent l'adoption
-                  du HTTPS.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section id="url" class="section alt">
-          <div class="container">
-            <h3>URL — structure et composants</h3>
-            <p class="lead">
-              Exemple :
-              <code
-                >https://example.com:443/path/page.html?query=1#section</code
-              >
-            </p>
-
-            <div class="grid-2">
-              <div>
-                <ul class="url-parts">
-                  <li><strong>Scheme</strong> (https)</li>
-                  <li><strong>Host</strong> (example.com)</li>
-                  <li><strong>Port</strong> (443)</li>
-                  <li><strong>Path</strong> (/path/page.html)</li>
-                  <li><strong>Query</strong> (?query=1)</li>
-                  <li><strong>Fragment</strong> (#section)</li>
-                </ul>
-              </div>
-              <div>
-                <label for="url-input">Tester une URL :</label>
-                <input id="url-input" placeholder="Collez une URL ici" />
-                <button id="parse-btn" class="btn small">Analyser</button>
-                <pre id="url-output" class="code-box">Résultat...</pre>
-              </div>
-            </div>
-
-            <aside class="note">
-              <h4>Statuts HTTP & Redirections</h4>
-              <p>
-                <strong>200</strong> OK — <strong>301</strong> Permanent
-                Redirect — <strong>302</strong> Temporary Redirect —
-                <strong>404</strong> Not Found — <strong>500</strong> Server
-                Error
-              </p>
-            </aside>
-          </div>
-        </section>
-
-        <section id="domain" class="section">
-          <div class="container">
-            <h3>Noms de domaine & DNS</h3>
-            <p class="lead">
-              Rôle du DNS : traduction des noms lisibles en adresses IP.
-            </p>
-            <div class="grid-2">
-              <div>
-                <ol>
-                  <li>Réserver un domaine via un registrar</li>
-                  <li>
-                    Configurer des enregistrements (A, AAAA, CNAME, MX, TXT)
-                  </li>
-                  <li>Renouveler / expiration / transfert</li>
-                </ol>
-              </div>
-              <div>
-                <div class="dns-graphic">
-                  <p>
-                    <em
-                      >Client → Résolveur DNS → Serveur autoritatif →
-                      Hébergement</em
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="standards" class="section alt">
-          <div class="container">
-            <h3>Standards du Web</h3>
-            <p class="lead">
-              W3C, IETF et autres organisations définissent les règles pour que
-              les technologies fonctionnent ensemble.
-            </p>
-            <ul class="cards">
-              <li>
-                <h4>Pourquoi les standards ?</h4>
-                <p>
-                  Interopérabilité, accessibilité, maintenance et innovation.
-                </p>
-              </li>
-              <li>
-                <h4>Exemples</h4>
-                <p>HTML, CSS, HTTP, WebAssembly, ARIA pour l'accessibilité.</p>
-              </li>
-              <li>
-                <h4>Conséquence sans standards</h4>
-                <p>
-                  Incompatibilités navigateur → fragmentation et coûts accrus.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="security" class="section">
-          <div class="container">
-            <h3>Sécurité</h3>
-            <p class="lead">Menaces courantes et bonnes pratiques.</p>
-            <div class="grid-3">
-              <div class="card">
-                <h4>Phishing</h4>
-                <p>
-                  Faux emails/sites pour voler des identifiants. Vérifier l'URL
-                  et activer 2FA.
-                </p>
-              </div>
-              <div class="card">
-                <h4>Malware</h4>
-                <p>
-                  Programmes malveillants. Mettre à jour les logiciels et éviter
-                  les pièces jointes suspectes.
-                </p>
-              </div>
-              <div class="card">
-                <h4>Brute force</h4>
-                <p>
-                  Attaques sur mots de passe. Utiliser mots de passe forts et
-                  limiter tentatives.
-                </p>
-              </div>
-            </div>
-            <div class="security-list">
-              <h4>Bonnes pratiques</h4>
-              <ul>
-                <li>HTTPS & HSTS</li>
-                <li>Mots de passe uniques + gestionnaire</li>
-                <li>2FA</li>
-                <li>Backups & monitoring</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section id="contact" class="section alt">
-          <div class="container">
-            <h3>Contact & Sources</h3>
-            <p class="lead">Sources principales : W3C, MDN, ICANN, OWASP.</p>
-            <form
-              id="contact-form"
-              class="contact-form"
-              onsubmit="return false;"
-            >
-              <label for="name">Nom</label>
-              <input id="name" required />
-              <label for="email">Email</label>
-              <input id="email" type="email" required />
-              <label for="msg">Message</label>
-              <textarea id="msg" rows="4"></textarea>
-              <button class="btn" id="send-btn">Envoyer (demo)</button>
-              <p id="form-note" class="muted">
-                Ce formulaire est une démo sans backend.
-              </p>
-            </form>
-          </div>
-        </section>
-      </main>
-
-      <footer class="site-footer">
-        <div class="container">
-          <small
-            >© <span id="year"></span> Le Web expliqué — Projet étudiant</small
-          >
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter">T</a>
+          <a href="#" aria-label="GitHub">G</a>
+          <a href="#" aria-label="LinkedIn">L</a>
         </div>
-      </footer>
-      <script src="js/script.js"></script>
-    </body>
-  </html>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
