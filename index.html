@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Understanding the Web</title>
+    <title>Web Project</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="overlay" id="overlay"></div>
-
     <!-- Header -->
     <header>
       <div class="logo">WebProject</div>
@@ -20,15 +18,15 @@
         <span></span>
       </div>
 
-      <!-- Menu -->
+      <!-- Navigation -->
       <nav id="nav-menu">
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#section1">Timeline</a></li>
           <li><a href="#section2">URL</a></li>
-          <li><a href="#section3">Domains</a></li>
-          <li><a href="#section4">Standards</a></li>
-          <li><a href="#section5">Security</a></li>
+          <li><a href="#domains">Domains</a></li>
+          <li><a href="#standards">Web Standards</a></li>
+          <li><a href="#security">Security</a></li>
         </ul>
       </nav>
 
@@ -39,50 +37,1543 @@
     <!-- Hero Section -->
     <section id="hero" class="hero">
       <div class="hero-content">
-        <h1>Understanding the Web</h1>
-        <p>
-          A modern, interactive journey through the foundations of the internet.
-        </p>
+        <h1>The Web Explained</h1>
+        <p>Explore the evolution, standards, and security of the web.</p>
         <a href="#section1" class="scroll-down">
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
+          <svg viewBox="0 0 24 24" fill="none">
             <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
         </a>
       </div>
     </section>
 
-    <!-- Placeholder sections -->
-    <section id="section1" class="section">Timeline Section</section>
-    <section id="section2" class="section">URL Section</section>
-    <section id="section3" class="section">Dom</section>
-    <!-- Footer -->
-    <footer>
-      <div class="footer-content">
-        <p>&copy; 2025 WebProject. All rights reserved.</p>
-        <div class="footer-links">
-          <a href="#hero">Home</a>
-          <a href="#section1">Timeline</a>
-          <a href="#section2">URL</a>
-          <a href="#section3">Domains</a>
-          <a href="#section4">Standards</a>
-          <a href="#section5">Security</a>
+    <!-- Timeline Section -->
+    <section id="section1" class="timeline-section">
+      <div class="timeline-fade-top"></div>
+      <div class="timeline-container">
+        <h2 class="timeline-title">
+          Timeline du Web : Les Grandes Étapes de l'Histoire d'Internet
+        </h2>
+
+        <!-- Era Indicators -->
+        <div class="era-indicators">
+          <div class="era-indicator active" data-era="1">
+            <span class="era-dot"></span>
+            <span class="era-label">Prémices</span>
+          </div>
+          <div class="era-indicator" data-era="2">
+            <span class="era-dot"></span>
+            <span class="era-label">Émergence</span>
+          </div>
+          <div class="era-indicator" data-era="3">
+            <span class="era-dot"></span>
+            <span class="era-label">Commercial</span>
+          </div>
+          <div class="era-indicator" data-era="4">
+            <span class="era-dot"></span>
+            <span class="era-label">Web 2.0</span>
+          </div>
+          <div class="era-indicator" data-era="5">
+            <span class="era-dot"></span>
+            <span class="era-label">Mobile</span>
+          </div>
+          <div class="era-indicator" data-era="6">
+            <span class="era-dot"></span>
+            <span class="era-label">Web 3.0</span>
+          </div>
         </div>
-        <div class="footer-social">
-          <a href="#" aria-label="Twitter">T</a>
-          <a href="#" aria-label="GitHub">G</a>
-          <a href="#" aria-label="LinkedIn">L</a>
+
+        <!-- Mobile Vertical Navigation -->
+        <div class="mobile-vertical-nav">
+          <div class="mobile-nav-item" data-era="1">
+            <span class="mobile-nav-dot era-1"></span>
+            <span class="mobile-nav-label">Prémices</span>
+          </div>
+          <div class="mobile-nav-item" data-era="2">
+            <span class="mobile-nav-dot era-2"></span>
+            <span class="mobile-nav-label">Émergence</span>
+          </div>
+          <div class="mobile-nav-item" data-era="3">
+            <span class="mobile-nav-dot era-3"></span>
+            <span class="mobile-nav-label">Commercial</span>
+          </div>
+          <div class="mobile-nav-item" data-era="4">
+            <span class="mobile-nav-dot era-4"></span>
+            <span class="mobile-nav-label">Web 2.0</span>
+          </div>
+          <div class="mobile-nav-item" data-era="5">
+            <span class="mobile-nav-dot era-5"></span>
+            <span class="mobile-nav-label">Mobile</span>
+          </div>
+          <div class="mobile-nav-item" data-era="6">
+            <span class="mobile-nav-dot era-6"></span>
+            <span class="mobile-nav-label">Web 3.0</span>
+          </div>
+        </div>
+
+        <!-- Vertical Timeline -->
+        <div class="timeline-track">
+          <!-- Era 1: Les Prémices et la Naissance du Web (1960-1990) -->
+          <div class="timeline-item era-1 active" data-era="1">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="era-header">
+                <span class="era-period">1960-1990</span>
+                <h3 class="era-title">Les Prémices et la Naissance du Web</h3>
+              </div>
+              <div class="event-details">
+                <div class="timeline-year">2 septembre 1969</div>
+                <h4>Naissance d'ARPANET</h4>
+                <p class="event-quote">
+                  "Le premier échange d'informations entre deux ordinateurs
+                  distants marque les premiers pas vers l'Internet moderne."
+                </p>
+                <p>
+                  Connexion entre l'université de Californie (UCLA) et le
+                  Stanford Research Institute - premier réseau informatique
+                  décentralisé.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-1" data-era="1">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">1971</div>
+                <h4>Premier email</h4>
+                <p class="event-quote">
+                  "Ray Tomlinson révolutionne la communication en inventant le
+                  courrier électronique et le symbole @."
+                </p>
+                <p>
+                  Transfert de 200 lignes de code entre ordinateurs via des
+                  boîtes aux lettres électroniques.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-1" data-era="1">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">1er janvier 1983</div>
+                <h4>Adoption du protocole TCP/IP</h4>
+                <p class="event-quote">
+                  "La naissance officielle d'Internet avec l'uniformisation des
+                  protocoles de transfert."
+                </p>
+                <p>
+                  Protocole créé par Vinton Cerf et Robert Kahn, remplaçant le
+                  protocole NCP d'ARPANET.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-1" data-era="1">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">12 mars 1989</div>
+                <h4>Proposition du World Wide Web</h4>
+                <p class="event-quote">
+                  "Tim Berners-Lee pose les bases de la plus grande invention du
+                  20ème siècle au CERN."
+                </p>
+                <p>
+                  Première proposition pour réorganiser les bases de données du
+                  CERN en utilisant l'hypertexte.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Era 2: L'Émergence du Web (1990-1995) -->
+          <div class="timeline-item era-2" data-era="2">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="era-header">
+                <span class="era-period">1990-1995</span>
+                <h3 class="era-title">L'Émergence du Web</h3>
+              </div>
+              <div class="event-details">
+                <div class="timeline-year">20 décembre 1990</div>
+                <h4>Premier site web</h4>
+                <p class="event-quote">
+                  "La naissance du premier serveur Web et du premier site web
+                  sur un ordinateur NeXT."
+                </p>
+                <p>
+                  Création par Tim Berners-Lee à l'adresse info.cern.ch,
+                  définition des protocoles HTTP et HTML.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-2" data-era="2">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">6 août 1991</div>
+                <h4>Démocratisation du Web</h4>
+                <p class="event-quote">
+                  "Tim Berners-Lee annonce l'accessibilité publique du World
+                  Wide Web en dehors du CERN."
+                </p>
+                <p>
+                  Publication sur le groupe alt.hypertext de Usenet avec
+                  l'invitation "Essayez-le".
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-2" data-era="2">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">30 avril 1993</div>
+                <h4>Internet devient public</h4>
+                <p class="event-quote">
+                  "Le CERN libère le code source et rend le WWW gratuit pour
+                  tous."
+                </p>
+                <p>
+                  Publication du code source du navigateur, explosion du nombre
+                  de serveurs web de 500 à 10 000 en 1994.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-2" data-era="2">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">1993</div>
+                <h4>Premier navigateur graphique populaire - Mosaic</h4>
+                <p class="event-quote">
+                  "NCSA Mosaic démocratise l'accès au Web avec la première
+                  interface graphique conviviale."
+                </p>
+                <p>
+                  Développé par Marc Andreessen, permettant l'affichage d'images
+                  et de texte sur la même page.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-2" data-era="2">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">Janvier 1994</div>
+                <h4>Naissance de Yahoo!</h4>
+                <p class="event-quote">
+                  "Jerry Yang et David Filo créent le premier annuaire Web,
+                  transformant la navigation sur Internet."
+                </p>
+                <p>
+                  Premier moteur de recherche/annuaire permettant de structurer
+                  et classer les sites web par thèmes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Era 3: L'Explosion du Web Commercial (1995-2000) -->
+          <div class="timeline-item era-3" data-era="3">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="era-header">
+                <span class="era-period">1995-2000</span>
+                <h3 class="era-title">L'Explosion du Web Commercial</h3>
+              </div>
+              <div class="event-details">
+                <div class="timeline-year">Octobre 1994</div>
+                <h4>Netscape Navigator</h4>
+                <p class="event-quote">
+                  "Le premier navigateur commercial grand public déclenche la
+                  démocratisation d'Internet."
+                </p>
+                <p>
+                  Développé par Marc Andreessen, coûtant 49$, il devient
+                  rapidement dominant avec des innovations comme JavaScript.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-3" data-era="3">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">Août 1995</div>
+                <h4>Internet Explorer</h4>
+                <p class="event-quote">
+                  "Microsoft entre dans la guerre des navigateurs, déclenchant
+                  une bataille pour le contrôle du Web."
+                </p>
+                <p>
+                  Basé sur Spyglass Mosaic, distribué gratuitement avec Windows
+                  95.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-3" data-era="3">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">Juillet 1995</div>
+                <h4>Amazon</h4>
+                <p class="event-quote">
+                  "Jeff Bezos lance la révolution du commerce électronique avec
+                  la vente de livres en ligne."
+                </p>
+                <p>
+                  Première grande plateforme de vente en ligne, posant les bases
+                  de l'e-commerce moderne.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-3" data-era="3">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">1995</div>
+                <h4>AltaVista</h4>
+                <p class="event-quote">
+                  "Premier moteur de recherche full-text révolutionnant la
+                  recherche d'informations sur le Web."
+                </p>
+                <p>
+                  Permet la recherche en langage naturel et la soumission de
+                  pages.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-3" data-era="3">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">Septembre 1998</div>
+                <h4>Naissance de Google</h4>
+                <p class="event-quote">
+                  "Larry Page et Sergey Brin révolutionnent la recherche Web
+                  avec l'algorithme PageRank."
+                </p>
+                <p>
+                  Changement de paradigme : popularité d'une page basée sur le
+                  nombre de liens entrants.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Era 4: L'Ère du Web 2.0 et des Réseaux Sociaux (2000-2010) -->
+          <div class="timeline-item era-4" data-era="4">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="era-header">
+                <span class="era-period">2000-2010</span>
+                <h3 class="era-title">
+                  L'Ère du Web 2.0 et des Réseaux Sociaux
+                </h3>
+              </div>
+              <div class="event-details">
+                <div class="timeline-year">15 janvier 2001</div>
+                <h4>Wikipédia</h4>
+                <p class="event-quote">
+                  "Jimmy Wales lance l'encyclopédie collaborative, symbole du
+                  Web participatif."
+                </p>
+                <p>
+                  Première grande plateforme de contenu généré par les
+                  utilisateurs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-4" data-era="4">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">2003</div>
+                <h4>MySpace</h4>
+                <p class="event-quote">
+                  "Le réseau social musical devient le 4ème site le plus visité
+                  au monde en 2005."
+                </p>
+                <p>
+                  Premier grand réseau social permettant la personnalisation des
+                  profils.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-4" data-era="4">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">Février 2004</div>
+                <h4>Facebook</h4>
+                <p class="event-quote">
+                  "Mark Zuckerberg révolutionne les réseaux sociaux depuis
+                  l'université de Harvard."
+                </p>
+                <p>
+                  Evolution vers le plus grand réseau social mondial avec plus
+                  de 3 milliards d'utilisateurs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-4" data-era="4">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">Février 2005</div>
+                <h4>YouTube</h4>
+                <p class="event-quote">
+                  "Trois anciens employés de PayPal transforment le partage de
+                  vidéos sur Internet."
+                </p>
+                <p>
+                  Première vidéo "Me at the zoo" le 23 avril 2005, rachat par
+                  Google pour 1,65 milliard $.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-4" data-era="4">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">2005</div>
+                <h4>Émergence d'AJAX</h4>
+                <p class="event-quote">
+                  "La technologie Ajax révolutionne l'interactivité web avec des
+                  pages dynamiques sans rechargement."
+                </p>
+                <p>
+                  Asynchronous JavaScript and XML permet des applications web
+                  interactives et réactives.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-4" data-era="4">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">2006</div>
+                <h4>Twitter</h4>
+                <p class="event-quote">
+                  "Jack Dorsey invente le microblogging et transforme la
+                  diffusion d'informations en temps réel."
+                </p>
+                <p>
+                  Introduction du concept de fil d'actualité et des hashtags,
+                  limité à 140 puis 280 caractères.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Era 5: L'Ère Mobile et du Cloud (2007-2015) -->
+          <div class="timeline-item era-5" data-era="5">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="era-header">
+                <span class="era-period">2007-2015</span>
+                <h3 class="era-title">L'Ère Mobile et du Cloud</h3>
+              </div>
+              <div class="event-details">
+                <div class="timeline-year">29 juin 2007</div>
+                <h4>iPhone</h4>
+                <p class="event-quote">
+                  "Steve Jobs révolutionne l'accès mobile au Web avec le premier
+                  smartphone tactile."
+                </p>
+                <p>
+                  Transformation de l'expérience web mobile et naissance de
+                  l'internet mobile.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-5" data-era="5">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">Juillet 2008</div>
+                <h4>App Store</h4>
+                <p class="event-quote">
+                  "Apple lance l'économie des applications mobiles, changeant la
+                  consommation de contenu web."
+                </p>
+                <p>
+                  Les contenus passent de plus en plus par des applications
+                  plutôt que par des navigateurs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-5" data-era="5">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">Septembre 2008</div>
+                <h4>Google Chrome</h4>
+                <p class="event-quote">
+                  "Google entre dans la guerre des navigateurs avec un focus sur
+                  la vitesse et la simplicité."
+                </p>
+                <p>
+                  Rapidement adopté, il deviendra le navigateur dominant
+                  mondial.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-5" data-era="5">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">2008</div>
+                <h4>Android</h4>
+                <p class="event-quote">
+                  "Google démocratise les smartphones avec un système
+                  d'exploitation open-source."
+                </p>
+                <p>
+                  Android atteint 72% de parts de marché mondial contre 28% pour
+                  iOS.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-5" data-era="5">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">Années 2010</div>
+                <h4>Explosion du SaaS (Software as a Service)</h4>
+                <p class="event-quote">
+                  "Le cloud computing transforme la distribution de logiciels
+                  avec des applications accessibles par navigateur."
+                </p>
+                <p>
+                  Services comme Salesforce, Dropbox, Office 365 redéfinissent
+                  l'usage des applications web.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Era 6: L'Ère Moderne : Web 3.0 et Technologies Émergentes (2015-Présent) -->
+          <div class="timeline-item era-6" data-era="6">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="era-header">
+                <span class="era-period">2015-Présent</span>
+                <h3 class="era-title">
+                  L'Ère Moderne : Web 3.0 et Technologies Émergentes
+                </h3>
+              </div>
+              <div class="event-details">
+                <div class="timeline-year">2010s-2020s</div>
+                <h4>Web 2.0 vers Web 3.0</h4>
+                <p class="event-quote">
+                  "Evolution vers un web décentralisé, intelligent et axé sur la
+                  propriété des données."
+                </p>
+                <p>
+                  Integration de l'IA, blockchain, IoT pour un web plus
+                  personnalisé et décentralisé.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-6" data-era="6">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">Années 2020</div>
+                <h4>Émergence du Métavers</h4>
+
+                <p class="event-quote">
+                  "Convergence des technologies VR, AR, blockchain et IA pour
+                  créer des mondes virtuels immersifs."
+                </p>
+                <p>
+                  Facebook devient Meta, investissant 10 milliards $ dans cette
+                  technologie.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-6" data-era="6">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">Années 2020</div>
+                <h4>Intelligence Artificielle</h4>
+                <p class="event-quote">
+                  "L'IA transforme l'expérience web avec des services
+                  personnalisés et des assistants intelligents."
+                </p>
+                <p>
+                  ChatGPT et autres IA génératives révolutionnent la création de
+                  contenu et l'interaction web.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item era-6" data-era="6">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="event-details">
+                <div class="timeline-year">Années 2020</div>
+                <h4>Technologies Blockchain et NFT</h4>
+                <p class="event-quote">
+                  "La blockchain promet un web décentralisé où les utilisateurs
+                  reprennent le contrôle de leurs données."
+                </p>
+                <p>
+                  Développement du Web3 avec propriété numérique et économies
+                  décentralisées.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- URL Anatomy Section -->
+    <section id="section2" class="url-section">
+      <div class="url-container">
+        <div class="section-header">
+          <h2 class="section-title">Anatomie d'une URL</h2>
+          <p class="section-subtitle">
+            Comprendre la structure des adresses web
+          </p>
+        </div>
+
+        <!-- URL Breakdown Illustration -->
+        <div class="url-anatomy">
+          <div class="url-example">
+            <div class="url-display">
+              <span
+                class="url-part protocol"
+                data-tooltip="Protocole de communication"
+                >https://</span
+              ><span class="url-part domain" data-tooltip="Nom de domaine"
+                >example.com</span
+              ><span class="url-part port" data-tooltip="Port (optionnel)"
+                >:443</span
+              ><span
+                class="url-part path"
+                data-tooltip="Chemin vers la ressource"
+                >/chemin/page</span
+              ><span class="url-part query" data-tooltip="Paramètres de requête"
+                >?param=valeur</span
+              ><span class="url-part fragment" data-tooltip="Ancre dans la page"
+                >#section</span
+              >
+            </div>
+          </div>
+
+          <!-- Component Explanations -->
+          <div class="url-components">
+            <div class="component protocol-component">
+              <div class="component-icon">🔒</div>
+              <h3>Protocole</h3>
+              <p><strong>https://</strong></p>
+              <p>
+                Définit comment les données sont transmises (HTTP, HTTPS,
+                FTP...)
+              </p>
+            </div>
+
+            <div class="component domain-component">
+              <div class="component-icon">🌐</div>
+              <h3>Domaine</h3>
+              <p><strong>example.com</strong></p>
+              <p>L'adresse unique qui identifie le serveur web</p>
+            </div>
+
+            <div class="component port-component">
+              <div class="component-icon">🚪</div>
+              <h3>Port</h3>
+              <p><strong>:443</strong></p>
+              <p>
+                Point d'entrée spécifique sur le serveur (443 pour HTTPS, 80
+                pour HTTP)
+              </p>
+            </div>
+
+            <div class="component path-component">
+              <div class="component-icon">📁</div>
+              <h3>Chemin</h3>
+              <p><strong>/chemin/page</strong></p>
+              <p>Localisation spécifique de la ressource sur le serveur</p>
+            </div>
+
+            <div class="component query-component">
+              <div class="component-icon">❓</div>
+              <h3>Paramètres</h3>
+              <p><strong>?param=valeur</strong></p>
+              <p>Données additionnelles transmises au serveur</p>
+            </div>
+
+            <div class="component fragment-component">
+              <div class="component-icon">⚓</div>
+              <h3>Ancre</h3>
+              <p><strong>#section</strong></p>
+              <p>Section spécifique dans la page web</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive URL Analyzer -->
+        <div class="url-analyzer">
+          <h3 class="analyzer-title">Analyseur d'URL Interactif</h3>
+          <p class="analyzer-subtitle">
+            Insérez une URL pour voir ses composants
+          </p>
+
+          <div class="url-input-container">
+            <label for="urlInput" class="url-label">URL à analyser:</label>
+            <input
+              type="url"
+              id="urlInput"
+              placeholder="Entrez une URL (ex: https://example.com/path?param=value#section)"
+              class="url-input"
+            />
+            <button id="analyzeBtn" class="analyze-btn">Analyser</button>
+          </div>
+
+          <div class="url-result" id="urlResult">
+            <div class="result-grid">
+              <div class="result-item">
+                <span class="result-label">Protocole:</span>
+                <span class="result-value" id="resultProtocol">-</span>
+              </div>
+              <div class="result-item">
+                <span class="result-label">Domaine:</span>
+                <span class="result-value" id="resultDomain">-</span>
+              </div>
+              <div class="result-item">
+                <span class="result-label">Port:</span>
+                <span class="result-value" id="resultPort">-</span>
+              </div>
+              <div class="result-item">
+                <span class="result-label">Chemin:</span>
+                <span class="result-value" id="resultPath">-</span>
+              </div>
+              <div class="result-item">
+                <span class="result-label">Paramètres:</span>
+                <span class="result-value" id="resultQuery">-</span>
+              </div>
+              <div class="result-item">
+                <span class="result-label">Ancre:</span>
+                <span class="result-value" id="resultFragment">-</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HTTP Redirections Summary -->
+        <div class="redirections-summary">
+          <h3>🔄 Redirections HTTP</h3>
+          <div class="redirect-info">
+            <span class="redirect-code-small redirect-301">301</span>
+            <strong>Permanent :</strong> La page a définitivement déménagé →
+            Transfert du SEO vers la nouvelle URL <br /><br />
+            <span class="redirect-code-small redirect-302">302</span>
+            <strong>Temporaire :</strong> La page est momentanément ailleurs →
+            L'URL originale garde son référencement
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Domain Names Section -->
+    <section id="domains" class="domain-section">
+      <div class="domain-container">
+        <div class="section-header">
+          <h2 class="section-title">🌐 Noms de Domaine</h2>
+          <p class="section-subtitle">
+            Comprendre l'écosystème des adresses web
+          </p>
+        </div>
+
+        <!-- DNS Definition -->
+        <div class="dns-definition">
+          <h3>🔍 Qu'est-ce qu'un nom de domaine ?</h3>
+          <div class="definition-content">
+            <div class="definition-text">
+              <p>
+                Un <strong>nom de domaine</strong> est l'adresse web lisible par
+                les humains qui permet d'accéder à un site internet. Il traduit
+                une adresse IP numérique complexe en mots facilement
+                mémorisables.
+              </p>
+              <div class="dns-example">
+                <div class="conversion">
+                  <span class="ip-address">192.168.1.1</span>
+                  <span class="arrow">↔</span>
+                  <span class="domain-name">google.com</span>
+                </div>
+                <p class="conversion-label">
+                  Le DNS (Domain Name System) fait la traduction
+                </p>
+              </div>
+            </div>
+            <div class="dns-role">
+              <h4>🎯 Rôle du DNS</h4>
+              <ul>
+                <li>
+                  <strong>Traduction :</strong> Convertit les noms en adresses
+                  IP
+                </li>
+                <li>
+                  <strong>Hiérarchisation :</strong> Organise internet en zones
+                </li>
+                <li>
+                  <strong>Décentralisation :</strong> Répartit la charge sur
+                  plusieurs serveurs
+                </li>
+                <li>
+                  <strong>Cache :</strong> Mémorise les résolutions pour
+                  accélérer l'accès
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Domain Lifecycle -->
+        <div class="domain-lifecycle">
+          <h3>♻️ Cycle de vie d'un nom de domaine</h3>
+          <div class="lifecycle-diagram">
+            <div class="lifecycle-step step-1">
+              <div class="step-icon">🔍</div>
+              <h4>Recherche</h4>
+              <p>Vérification de la disponibilité du domaine souhaité</p>
+              <span class="step-duration">Instantané</span>
+            </div>
+
+            <div class="lifecycle-arrow">→</div>
+
+            <div class="lifecycle-step step-2">
+              <div class="step-icon">💳</div>
+              <h4>Réservation</h4>
+              <p>Enregistrement via un registrar accrédité</p>
+              <span class="step-duration">1-10 ans</span>
+            </div>
+
+            <div class="lifecycle-arrow">→</div>
+
+            <div class="lifecycle-step step-3">
+              <div class="step-icon">🌐</div>
+              <h4>Utilisation</h4>
+              <p>Configuration DNS et mise en ligne du site web</p>
+              <span class="step-duration">Période active</span>
+            </div>
+
+            <div class="lifecycle-arrow">→</div>
+
+            <div class="lifecycle-step step-4">
+              <div class="step-icon">⏰</div>
+              <h4>Expiration</h4>
+              <p>Période de grâce puis libération du domaine</p>
+              <span class="step-duration">30-75 jours</span>
+            </div>
+
+            <div class="lifecycle-arrow renewal-arrow">↺</div>
+
+            <div class="renewal-option">
+              <div class="step-icon">🔄</div>
+              <h4>Renouvellement</h4>
+              <p>Prolongation avant expiration</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Domain Actors -->
+        <div class="domain-actors">
+          <h3>👥 Les acteurs de l'écosystème</h3>
+          <div class="actors-grid">
+            <div class="actor-card icann-card">
+              <div class="actor-icon">🏛️</div>
+              <h4>ICANN</h4>
+              <p class="actor-role">
+                Internet Corporation for Assigned Names and Numbers
+              </p>
+              <ul>
+                <li>Coordonne le système DNS mondial</li>
+                <li>
+                  Gère les domaines de premier niveau (.com, .org, .fr...)
+                </li>
+                <li>Accrédite les registrars</li>
+                <li>Supervise la stabilité d'Internet</li>
+              </ul>
+            </div>
+
+            <div class="actor-card registry-card">
+              <div class="actor-icon">🏢</div>
+              <h4>Registries</h4>
+              <p class="actor-role">Gestionnaires de TLD</p>
+              <ul>
+                <li><strong>Verisign :</strong> Gère .com et .net</li>
+                <li><strong>AFNIC :</strong> Gère .fr (France)</li>
+                <li><strong>Nominet :</strong> Gère .uk (Royaume-Uni)</li>
+                <li>Maintiennent les bases de données des domaines</li>
+              </ul>
+            </div>
+
+            <div class="actor-card registrar-card">
+              <div class="actor-icon">🏪</div>
+              <h4>Registrars</h4>
+              <p class="actor-role">Revendeurs accrédités</p>
+              <ul>
+                <li>
+                  <strong>Exemples :</strong> OVH, GoDaddy, Namecheap, Gandi
+                </li>
+                <li>Interface avec le grand public</li>
+                <li>Gestion des enregistrements DNS</li>
+                <li>Services annexes (hébergement, emails...)</li>
+              </ul>
+            </div>
+
+            <div class="actor-card user-card">
+              <div class="actor-icon">👤</div>
+              <h4>Utilisateurs</h4>
+              <p class="actor-role">Propriétaires de domaines</p>
+              <ul>
+                <li>Particuliers, entreprises, associations</li>
+                <li>Choisissent et réservent les noms</li>
+                <li>Configurent les services (site, email...)</li>
+                <li>Responsables du renouvellement</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Domain Structure -->
+        <div class="domain-structure">
+          <h3>🏗️ Structure hiérarchique</h3>
+          <div class="hierarchy-example">
+            <div class="domain-breakdown">
+              <span class="subdomain part">blog</span>
+              <span class="dot">.</span>
+              <span class="domain part">exemple</span>
+              <span class="dot">.</span>
+              <span class="tld part">com</span>
+              <span class="dot invisible">.</span>
+              <span class="root part">root</span>
+            </div>
+            <div class="breakdown-labels">
+              <span class="label">Sous-domaine</span>
+              <span class="label">Domaine</span>
+              <span class="label">TLD</span>
+              <span class="label">Racine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Web Standards Section -->
+    <section id="standards" class="standards-section">
+      <div class="standards-container">
+        <div class="section-header">
+          <h2 class="section-title">📐 Standards du Web</h2>
+          <p class="section-subtitle">
+            Les règles qui maintiennent l'ordre sur Internet
+          </p>
+        </div>
+
+        <!-- Organizations -->
+        <div class="standards-organizations">
+          <h3>🏛️ Les organismes de standardisation</h3>
+          <div class="organizations-grid">
+            <div class="org-card w3c-card">
+              <div class="org-logo">🌍</div>
+              <h4>W3C</h4>
+              <p class="org-full-name">World Wide Web Consortium</p>
+              <div class="org-details">
+                <p><strong>Fondé :</strong> 1994 par Tim Berners-Lee</p>
+                <p>
+                  <strong>Rôle :</strong> Développe les standards web (HTML,
+                  CSS, JavaScript)
+                </p>
+                <div class="org-standards">
+                  <span class="standard-tag">HTML5</span>
+                  <span class="standard-tag">CSS3</span>
+                  <span class="standard-tag">SVG</span>
+                  <span class="standard-tag">XML</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="org-card ietf-card">
+              <div class="org-logo">🔧</div>
+              <h4>IETF</h4>
+              <p class="org-full-name">Internet Engineering Task Force</p>
+              <div class="org-details">
+                <p><strong>Fondé :</strong> 1986</p>
+                <p>
+                  <strong>Rôle :</strong> Protocoles Internet et architecture
+                  réseau
+                </p>
+                <div class="org-standards">
+                  <span class="standard-tag">HTTP</span>
+                  <span class="standard-tag">TCP/IP</span>
+                  <span class="standard-tag">DNS</span>
+                  <span class="standard-tag">TLS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="org-card ecma-card">
+              <div class="org-logo">⚙️</div>
+              <h4>ECMA</h4>
+              <p class="org-full-name">
+                European Computer Manufacturers Association
+              </p>
+              <div class="org-details">
+                <p><strong>Fondé :</strong> 1961</p>
+                <p>
+                  <strong>Rôle :</strong> Standards de programmation et
+                  technologies
+                </p>
+                <div class="org-standards">
+                  <span class="standard-tag">JavaScript</span>
+                  <span class="standard-tag">JSON</span>
+                  <span class="standard-tag">C#</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="org-card iso-card">
+              <div class="org-logo">📊</div>
+              <h4>ISO</h4>
+              <p class="org-full-name">
+                International Organization for Standardization
+              </p>
+              <div class="org-details">
+                <p><strong>Fondé :</strong> 1947</p>
+                <p>
+                  <strong>Rôle :</strong> Standards internationaux (sécurité,
+                  qualité)
+                </p>
+                <div class="org-standards">
+                  <span class="standard-tag">ISO 27001</span>
+                  <span class="standard-tag">UTF-8</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why Standards Matter -->
+        <div class="standards-importance">
+          <h3>🎯 Pourquoi les standards sont-ils cruciaux ?</h3>
+          <div class="importance-grid">
+            <div class="benefit-card">
+              <div class="benefit-icon">🌐</div>
+              <h4>Compatibilité Universelle</h4>
+              <p>
+                Votre site fonctionne identiquement sur Chrome, Firefox, Safari,
+                Edge...
+              </p>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-icon">🔄</div>
+              <h4>Interopérabilité</h4>
+              <p>
+                Les technologies de différents éditeurs peuvent communiquer
+                entre elles
+              </p>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-icon">🚀</div>
+              <h4>Innovation Structurée</h4>
+              <p>
+                Nouvelles fonctionnalités développées sur des bases solides et
+                testées
+              </p>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-icon">👥</div>
+              <h4>Accessibilité</h4>
+              <p>
+                Standards garantissent l'accès aux personnes en situation de
+                handicap
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chaos Without Standards -->
+        <div class="chaos-example">
+          <h3>💥 Que se passerait-il sans standards ?</h3>
+          <div class="chaos-content">
+            <div class="chaos-scenario">
+              <h4>🌪️ Le Chaos du Web</h4>
+              <div class="chaos-points">
+                <div class="chaos-point">
+                  <div class="chaos-icon">🔥</div>
+                  <div class="chaos-text">
+                    <strong>Guerre des navigateurs :</strong> Chaque navigateur
+                    interpréterait le code différemment
+                  </div>
+                </div>
+
+                <div class="chaos-point">
+                  <div class="chaos-icon">💸</div>
+                  <div class="chaos-text">
+                    <strong>Coûts explosifs :</strong> Il faudrait coder une
+                    version par navigateur
+                  </div>
+                </div>
+
+                <div class="chaos-point">
+                  <div class="chaos-icon">🔒</div>
+                  <div class="chaos-text">
+                    <strong>Écosystèmes fermés :</strong> Les géants tech
+                    créeraient leurs propres "internets"
+                  </div>
+                </div>
+
+                <div class="chaos-point">
+                  <div class="chaos-icon">🚫</div>
+                  <div class="chaos-text">
+                    <strong>Innovation bloquée :</strong> Impossible de
+                    construire sur des bases instables
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reality-check">
+              <h4>✅ Grâce aux standards</h4>
+              <div class="reality-points">
+                <p>
+                  🎯 <strong>Un code, tous les navigateurs :</strong> Écrivez
+                  une fois, ça fonctionne partout
+                </p>
+                <p>
+                  💰 <strong>Économies massives :</strong> Pas de versions
+                  multiples à maintenir
+                </p>
+                <p>
+                  🔓 <strong>Web ouvert :</strong> Personne ne peut "posséder"
+                  Internet
+                </p>
+                <p>
+                  🚀 <strong>Innovation rapide :</strong> Nouvelles technologies
+                  adoptées universellement
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Standards Timeline -->
+        <div class="standards-timeline">
+          <h3>📅 Évolution des standards web</h3>
+          <div class="timeline-line">
+            <div class="timeline-milestone">
+              <div class="milestone-dot"></div>
+              <div class="milestone-content">
+                <div class="milestone-year">1991</div>
+                <h4>HTML</h4>
+                <p>Premier langage de balisage web</p>
+              </div>
+            </div>
+
+            <div class="timeline-milestone">
+              <div class="milestone-dot"></div>
+              <div class="milestone-content">
+                <div class="milestone-year">1996</div>
+                <h4>CSS1</h4>
+                <p>Séparation contenu/présentation</p>
+              </div>
+            </div>
+
+            <div class="timeline-milestone">
+              <div class="milestone-dot"></div>
+              <div class="milestone-content">
+                <div class="milestone-year">1997</div>
+                <h4>HTML 4</h4>
+                <p>Standardisation majeure</p>
+              </div>
+            </div>
+
+            <div class="timeline-milestone">
+              <div class="milestone-dot"></div>
+              <div class="milestone-content">
+                <div class="milestone-year">2014</div>
+                <h4>HTML5</h4>
+                <p>Web moderne et applications</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security" class="security-section">
+      <div class="security-container">
+        <div class="section-header">
+          <h2 class="section-title">🔒 Sécurité Web</h2>
+          <p class="section-subtitle">
+            Protéger et sécuriser l'écosystème numérique
+          </p>
+        </div>
+
+        <!-- Common Attacks -->
+        <div class="attacks-section">
+          <h3>⚔️ Attaques courantes sur le web</h3>
+          <div class="attacks-grid">
+            <div class="attack-card phishing-card">
+              <div class="attack-icon">🎣</div>
+              <h4>Phishing</h4>
+              <p class="attack-description">
+                Technique d'hameçonnage pour voler des informations personnelles
+              </p>
+              <div class="attack-details">
+                <p>
+                  <strong>Méthode :</strong> Faux sites web, emails frauduleux
+                  imitant des services légitimes
+                </p>
+                <p>
+                  <strong>Cible :</strong> Mots de passe, données bancaires,
+                  informations personnelles
+                </p>
+                <div class="attack-examples">
+                  <span class="example-tag">Faux emails bancaires</span>
+                  <span class="example-tag">Sites contrefaits</span>
+                  <span class="example-tag">SMS frauduleux</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="attack-card malware-card">
+              <div class="attack-icon">🦠</div>
+              <h4>Malware</h4>
+              <p class="attack-description">
+                Logiciels malveillants infectant les systèmes
+              </p>
+              <div class="attack-details">
+                <p>
+                  <strong>Types :</strong> Virus, ransomware, spyware, trojans
+                </p>
+                <p>
+                  <strong>Propagation :</strong> Téléchargements, emails, sites
+                  compromis
+                </p>
+                <div class="attack-examples">
+                  <span class="example-tag">Ransomware</span>
+                  <span class="example-tag">Keyloggers</span>
+                  <span class="example-tag">Botnet</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="attack-card bruteforce-card">
+              <div class="attack-icon">🔨</div>
+              <h4>Brute Force</h4>
+              <p class="attack-description">
+                Attaque par force brute pour casser les mots de passe
+              </p>
+              <div class="attack-details">
+                <p>
+                  <strong>Méthode :</strong> Test automatisé de milliers de
+                  combinaisons
+                </p>
+                <p>
+                  <strong>Cible :</strong> Comptes utilisateurs, systèmes
+                  d'authentification
+                </p>
+                <div class="attack-examples">
+                  <span class="example-tag">Dictionnaire</span>
+                  <span class="example-tag">Combinaisons</span>
+                  <span class="example-tag">Bots</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="attack-card scraping-card">
+              <div class="attack-icon">🕷️</div>
+              <h4>Scraping vs Abus</h4>
+              <p class="attack-description">
+                Extraction abusive de données et surcharge des serveurs
+              </p>
+              <div class="attack-details">
+                <p>
+                  <strong>Technique :</strong> Robots automatisés, requêtes en
+                  masse
+                </p>
+                <p>
+                  <strong>Impact :</strong> Surcharge serveur, vol de contenu,
+                  concurrence déloyale
+                </p>
+                <div class="attack-examples">
+                  <span class="example-tag">Web scraping</span>
+                  <span class="example-tag">DDoS</span>
+                  <span class="example-tag">Price scraping</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Security Best Practices -->
+        <div class="practices-section">
+          <h3>🛡️ Bonnes pratiques de sécurité</h3>
+          <div class="practices-grid">
+            <div class="practice-card https-card">
+              <div class="practice-icon">🔐</div>
+              <h4>HTTPS</h4>
+              <p class="practice-description">
+                Chiffrement des communications web
+              </p>
+              <div class="practice-benefits">
+                <div class="benefit-item">
+                  <span class="benefit-icon">✅</span>
+                  <span>Données chiffrées en transit</span>
+                </div>
+                <div class="benefit-item">
+                  <span class="benefit-icon">✅</span>
+                  <span>Authentification du serveur</span>
+                </div>
+                <div class="benefit-item">
+                  <span class="benefit-icon">✅</span>
+                  <span>Confiance des utilisateurs</span>
+                </div>
+                <div class="benefit-item">
+                  <span class="benefit-icon">✅</span>
+                  <span>SEO amélioré</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="practice-card password-card">
+              <div class="practice-icon">🔑</div>
+              <h4>Mots de passe forts</h4>
+              <p class="practice-description">
+                Création et gestion de mots de passe sécurisés
+              </p>
+              <div class="password-rules">
+                <div class="rule-item">
+                  <span class="rule-icon">📏</span>
+                  <span>Minimum 12 caractères</span>
+                </div>
+                <div class="rule-item">
+                  <span class="rule-icon">🔤</span>
+                  <span>Majuscules + minuscules</span>
+                </div>
+                <div class="rule-item">
+                  <span class="rule-icon">🔢</span>
+                  <span>Chiffres + symboles</span>
+                </div>
+                <div class="rule-item">
+                  <span class="rule-icon">🚫</span>
+                  <span>Unique par service</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="practice-card twofa-card">
+              <div class="practice-icon">📱</div>
+              <h4>2FA / MFA</h4>
+              <p class="practice-description">
+                Authentification à plusieurs facteurs
+              </p>
+              <div class="twofa-methods">
+                <div class="method-item">
+                  <span class="method-icon">📲</span>
+                  <span>SMS / Appel</span>
+                </div>
+                <div class="method-item">
+                  <span class="method-icon">📱</span>
+                  <span>App d'authentification</span>
+                </div>
+                <div class="method-item">
+                  <span class="method-icon">🔑</span>
+                  <span>Clés physiques</span>
+                </div>
+                <div class="method-item">
+                  <span class="method-icon">👆</span>
+                  <span>Biométrie</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="practice-card updates-card">
+              <div class="practice-icon">🔄</div>
+              <h4>Mises à jour</h4>
+              <p class="practice-description">Maintenir les systèmes à jour</p>
+              <div class="update-types">
+                <div class="update-item">
+                  <span class="update-icon">🌐</span>
+                  <span>Navigateurs web</span>
+                </div>
+                <div class="update-item">
+                  <span class="update-icon">💻</span>
+                  <span>Système d'exploitation</span>
+                </div>
+                <div class="update-item">
+                  <span class="update-icon">🛡️</span>
+                  <span>Antivirus</span>
+                </div>
+                <div class="update-item">
+                  <span class="update-icon">📱</span>
+                  <span>Applications</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Security Tips -->
+        <div class="security-tips">
+          <h3>💡 Conseils de sécurité essentiels</h3>
+          <div class="tips-container">
+            <div class="tip-card">
+              <div class="tip-number">1</div>
+              <div class="tip-content">
+                <h4>Méfiance avant tout</h4>
+                <p>
+                  Vérifiez toujours l'URL, l'expéditeur d'un email, et ne
+                  cliquez jamais sur des liens suspects
+                </p>
+              </div>
+            </div>
+
+            <div class="tip-card">
+              <div class="tip-number">2</div>
+              <div class="tip-content">
+                <h4>Gestionnaire de mots de passe</h4>
+                <p>
+                  Utilisez un gestionnaire comme Bitwarden, 1Password ou
+                  LastPass pour des mots de passe uniques
+                </p>
+              </div>
+            </div>
+
+            <div class="tip-card">
+              <div class="tip-number">3</div>
+              <div class="tip-content">
+                <h4>Sauvegardes régulières</h4>
+                <p>
+                  Sauvegardez vos données importantes sur plusieurs supports
+                  (cloud + local)
+                </p>
+              </div>
+            </div>
+
+            <div class="tip-card">
+              <div class="tip-number">4</div>
+              <div class="tip-content">
+                <h4>Réseaux WiFi sécurisés</h4>
+                <p>
+                  Évitez les WiFi publics pour des transactions sensibles,
+                  utilisez un VPN si nécessaire
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section3"></section>
+    <section id="section4"></section>
+    <section id="section5"></section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <div class="school-info">
+              <h4>IFOSUP</h4>
+              <p>Institut de Formation Supérieure</p>
+            </div>
+            <div class="author-info">
+              <h4>Selim Elyahyioui</h4>
+              <p>Étudiant • 2025</p>
+            </div>
+          </div>
+
+          <div class="footer-sources">
+            <h4>Sources & Références</h4>
+            <div class="sources-list">
+              <a href="https://www.w3.org" target="_blank" rel="noopener"
+                >W3C - World Wide Web Consortium</a
+              >
+              <a
+                href="https://developer.mozilla.org"
+                target="_blank"
+                rel="noopener"
+                >MDN Web Docs</a
+              >
+              <a href="https://www.ietf.org" target="_blank" rel="noopener"
+                >IETF - Internet Engineering Task Force</a
+              >
+              <a href="https://www.icann.org" target="_blank" rel="noopener"
+                >ICANN - Internet Corporation</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 - Projet académique réalisé dans le cadre des études à
+            l'IFOSUP
+          </p>
+          <div class="footer-tech">
+            <span>Développé avec HTML5, CSS3 & JavaScript</span>
+          </div>
         </div>
       </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
