@@ -323,6 +323,13 @@ nav ul li a:hover {
   display: none;
 }
 
+/* Ensure mobile navigation never shows on desktop */
+@media (min-width: 641px) {
+  .mobile-vertical-nav {
+    display: none !important;
+  }
+}
+
 .era-indicator.active[data-era="1"] {
   border: 1px solid #ff6b6b;
   box-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
